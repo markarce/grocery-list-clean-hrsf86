@@ -9,7 +9,4 @@ GroceryItem.proptypes = {
   item: React.PropTypes.object.isRequired
 };
 
-
 export default GroceryItem;
-
-// ReactDOM.render(<GroceryItem />, document.getElementById('app'));

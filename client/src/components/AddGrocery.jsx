@@ -12,8 +12,7 @@ class AddGrocery extends React.Component {
     this.handleChange = this.handleChange.bind(this);
   }
 
-  handleChange (event) {
-    console.log('log ', event.target.name + ':' + event.target.value);
+  handleChange(event) {
     this.setState({[event.target.name]: event.target.value});
   }
 
@@ -21,32 +20,33 @@ class AddGrocery extends React.Component {
     this.props.submit(event);
   }
 
-  render () {
+  render() {
     return (
       <div>
         <form onSubmit={this.handleSubmit}>
           <div>
-          <label>
-            Description:
-            <input 
-              type="text" 
-              value={this.props.description} 
-              onChange={this.handleChange}
-              name="description"
-               />
-          </label>
+            <label>
+              Description:
+              <input 
+                type="text" 
+                value={this.state.description}
+                onChange={this.handleChange}
+                name="description"
+              />
+            </label>
           </div>
-          <div>
-          <label>
-            Quantity:  
-            <input 
-              type="number" 
-              max="99" 
-              value={this.props.quantity} 
-              onChange={this.handleChange}
-              name="quantity" />
+            <div>
+              <label>
+                Quantity:  
+                <input 
+                  type="number" 
+                  max="99" 
+                  value={this.state.quantity}
+                  onChange={this.handleChange}
+                  name="quantity" 
+                />
+              </label>
             <input type="submit" value="Add to List" />
-          </label>
           </div>
         </form>
       </div>
