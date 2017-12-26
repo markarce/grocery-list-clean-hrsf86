@@ -13,3 +13,7 @@ body {
 .groceries {
   margin: 10px;
 }
+
+.grocery-item {
+  list-style: none;
+}

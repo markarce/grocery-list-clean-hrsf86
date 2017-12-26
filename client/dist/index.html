@@ -7,8 +7,35 @@
 <body>
 <div id="main">
   <img src="grocery-bags.png"></img>
-  <div id="app"></div>
+  <div id="app">
+  </div>
 </div>
 <script type="text/javascript" src="bundle.js"></script>
 </body>
 </html>
+
+
+
+<!--       <div>
+        <label>Description: 
+          <input type="text" id="description" name="item" />
+        </label>
+        <div>
+          <label>Quantity: 
+            <input type="number" id="quantity" name="qty" maxLength="4" size="4" />
+          </label>
+          <button onClick={this.addToList.bind(this, item, qty)}>
+          Add to list</button>
+        </div>
+      </div>
+
+
+      <form onSubmit={this.handleSubmit}>
+        <label>
+          Description:
+          <input type="text" value={this.state.description} onChange={this.handleChange} />
+          <input type="number" value={this.state.quantity} onChange={this.handleChange} />
+        </label>
+        <input type="submit" value="Add to List" onClick={this.addToList}/>
+      </form> 
+    -->
